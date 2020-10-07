@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    overflow-y: hidden;
+    
 }
 .header {
     background: #F4F6F9;
@@ -54,7 +54,9 @@ a {
     height: 47px;
     background: #000000;
     border-radius: 7.33503px;
-    color: #ffffff;
+    color: #ffffff; 
+}
+.button:first-child {
     margin-right: 20px; 
 }
 .button-text {
@@ -67,21 +69,81 @@ a {
     padding: 0;
 }
 .button-icon {
-    width: 25px;
-    height: 25px;
+    width: 25%;
+    height: 70%;
     float: left;
     padding: 7px;  
 }
 .section-1 {
-    height: 592px
+    max-width: 1400px;
+    min-width: 900px;
+    width: 100%;
+    height: 592px;
+    background:  #F4F6F9;
+    background-image: url(img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-@media (min-width: 360px)  and (max-width: 720px) {
+.section1-img-block {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+}
+.section-1-img {
+    margin-top: -9rem;
+    margin-left: 4rem;
+    z-index: 1;
+}
+.section-1-img2 {
+    margin-left: -17rem;
+    margin-bottom: -10rem;
+}
+.section1-text-block {
+    padding-left: 4rem;
+    width: 50%;
+    height: 100%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.section-title {
+    margin-top: 6rem;
+    color: #00ADEE;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.section-main-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color:  #333333;
+    margin-bottom: 1rem;
+}
+.section-text {
+    font-size: 1.1rem;
+    color: #4F4F4F;
+    line-height: 23px;
+    font-weight: normal;
+    width: 70%;
+    margin-bottom: 2rem;  
+}
+.section-link {
+    color: #00ADEE;
+    font-size: 1.1rem;
+}
 
-    
+@media (min-width: 360px)  and (max-width: 720px) {
     .header {
         background: #F4F6F9;
         width: 100%;
         min-width: 360px;  
+        height: 525px;
     }
     .header-wrapper {
         width: 100%;
@@ -97,4 +159,48 @@ a {
     .header-buttons {
         margin: 0 auto;
     }
-    
+    .section-1 {
+        width: 100%;
+        min-width: 360px;
+        max-height: 850px;
+        background-image: none;
+        background-color: #FFFFFF;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .section1-img-block {
+        order: 2;
+        width: 100%;
+        align-content: center;
+        background-size: 150%;
+        background-image: url(img/Rectangle.png);
+        background-repeat: no-repeat;
+        background-position-x: 60%;
+        background-blend-mode: color-burn;
+    }
+    .section-1-img {
+        margin-top: -17rem;
+        margin-left: -2rem;
+    }
+    .section-1-img2 {
+        margin-left: -12rem;
+        margin-bottom: 5rem;
+    }
+    .section1-text-block {
+        width: 100%;
+        order: 1;
+        padding: 0;
+        margin: 0 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    .section-main-title {
+        width: 90%;
+        font-size: 1.8rem;
+        
+    }
+    .section-text {
+        width: 80%;
+    }
+}
