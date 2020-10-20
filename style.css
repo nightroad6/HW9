@@ -351,6 +351,9 @@ a {
     .section-2 {
         height: 520px;
     }
+    .section-2-img {
+        width: 35%;
+    }
     .section-3 {
         height: auto;
     }
@@ -390,8 +393,7 @@ a {
     width: 70%;
 }
 .section-2-img {
-    margin-top: 5rem;
-    width: 50%;
+    width: 45%;
 }
 .section-3 {
     background-repeat: repeat;
